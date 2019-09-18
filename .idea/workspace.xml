@@ -25,11 +25,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1R0D5cmEImL5wztEKD1XeBT18wd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CalculatorTestNGTest" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.18139963" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
@@ -49,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.navigationToAllOwners">
+  <component name="RunManager" selected="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml">
     <configuration name="Tests.homepagePresenceOfElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gradsHomework" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,8 +71,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="gradsHomework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.navigationToAllOwners" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="gradsHomework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="navigationToAllOwners" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" />
+        <item itemvalue="TestNG.Tests.navigationToAllOwners" />
         <item itemvalue="JUnit.Tests.navigationToAllOwners" />
         <item itemvalue="JUnit.Tests.homepagePresenceOfElements" />
       </list>

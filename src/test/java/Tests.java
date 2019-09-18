@@ -1,12 +1,15 @@
-import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Map;
 import java.util.Properties;
 
 public class Tests {
@@ -31,7 +34,7 @@ public class Tests {
         }
     }
 
-    @Before
+    @BeforeMethod
     public void setUp(){
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/config/chromedriver.exe");
         driver = new ChromeDriver();
@@ -65,7 +68,7 @@ public class Tests {
         Assert.assertEquals(ownersPage.getPageTitle().getText(),"Owners");
     }
 
-    @After
+    @AfterMethod
     public void tearDown(){
         driver.quit();
     }
