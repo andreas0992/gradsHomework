@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c41ee122-4f34-42f1-b8d8-81fd71bc2a54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataGeneration/OwnerGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/NewOwnerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OwnersTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DatabaseInteraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/geckodriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HeaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HeaderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OwnersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OwnersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PetClinicHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PetClinicHomepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomepageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HeaderPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/OwnersPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PetClinicHomepage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomepageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomepageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/OwnersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OwnersTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HomepageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomepageTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/OwnersTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OwnersTests.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +47,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asirghie\IdeaProjects\gradsHomework\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asirghie\IdeaProjects\gradsHomework\config" />
     </key>
@@ -135,10 +127,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.OwnersTests.navigateToAddOwner" />
-        <item itemvalue="TestNG.OwnersTests.addOwner" />
-        <item itemvalue="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" />
-        <item itemvalue="TestNG.HomepageTests" />
         <item itemvalue="TestNG.HomepageTests.navigationToAllOwners" />
+        <item itemvalue="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" />
+        <item itemvalue="TestNG.OwnersTests.addOwner" />
+        <item itemvalue="TestNG.HomepageTests" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +152,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
