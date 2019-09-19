@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c41ee122-4f34-42f1-b8d8-81fd71bc2a54" name="Default Changelist" comment="" />
+    <list default="true" id="c41ee122-4f34-42f1-b8d8-81fd71bc2a54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataGeneration/OwnerGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/NewOwnerPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/OwnersTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/geckodriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/geckodriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HeaderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HeaderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OwnersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OwnersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PetClinicHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PetClinicHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomepageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HeaderPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/OwnersPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PetClinicHomepage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +32,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="PageClass" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -27,7 +50,8 @@
   <component name="ProjectId" id="1R0D5cmEImL5wztEKD1XeBT18wd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CalculatorTestNGTest" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18139963" />
@@ -50,27 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml">
-    <configuration name="Tests.homepagePresenceOfElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gradsHomework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="homepagePresenceOfElements" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.navigationToAllOwners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gradsHomework" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
-      <option name="METHOD_NAME" value="navigationToAllOwners" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.OwnersTests.navigateToAddOwner">
     <configuration name="C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="gradsHomework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -81,11 +85,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.navigationToAllOwners" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomepageTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="gradsHomework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="HomepageTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomepageTests.navigationToAllOwners" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="gradsHomework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomepageTests" />
       <option name="METHOD_NAME" value="navigationToAllOwners" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnersTests.addOwner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="gradsHomework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OwnersTests" />
+      <option name="METHOD_NAME" value="addOwner" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OwnersTests.navigateToAddOwner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="gradsHomework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OwnersTests" />
+      <option name="METHOD_NAME" value="navigateToAddOwner" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -95,10 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.OwnersTests.navigateToAddOwner" />
+        <item itemvalue="TestNG.OwnersTests.addOwner" />
         <item itemvalue="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" />
-        <item itemvalue="TestNG.Tests.navigationToAllOwners" />
-        <item itemvalue="JUnit.Tests.navigationToAllOwners" />
-        <item itemvalue="JUnit.Tests.homepagePresenceOfElements" />
+        <item itemvalue="TestNG.HomepageTests" />
+        <item itemvalue="TestNG.HomepageTests.navigationToAllOwners" />
       </list>
     </recent_temporary>
   </component>
@@ -114,5 +154,16 @@
       <updated>1568794937571</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

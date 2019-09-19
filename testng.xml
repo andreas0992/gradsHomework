@@ -3,9 +3,9 @@
 <suite name="All tests suite">
     <test name="Pet clinic test">
         <classes>
-            <class name="Tests">
-                
+            <class name="HomepageTests">
             </class>
+            <class name="OwnersTests"></class>
         </classes>
     </test>
 </suite>
