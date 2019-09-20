@@ -1,22 +1,34 @@
 package utils;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class DatabaseInteraction {
 
-    public void connect() throws SQLException {
-        String url = "jdbc:mysql://bhdtest.endava.com:3306/";
-        Connection connection = DriverManager.getConnection(url, "admin", "admin");
-        System.out.println("connected");
-        Statement statement = connection.createStatement();
+    public ArrayList<String> getQueryResults(String databaseUrl, String user, String password, String query) throws SQLException {
+        String url = databaseUrl;
+        Connection connection = null;
         ResultSet resSet;
-
-        resSet = statement.executeQuery("select * from owners");
-        System.out.println("got before while");
-        while (resSet.next()) {
-            System.out.println(resSet.getString(1));
+        ResultSetMetaData resMeta;
+        ArrayList<String> rows = new ArrayList<String>();
+        try {
+            connection = DriverManager.getConnection(url, user, password);
+            Statement statement = connection.createStatement();
+            resSet = statement.executeQuery(query);
+            resMeta = resSet.getMetaData();
+            int noOfColumns = resMeta.getColumnCount();
+            while (resSet.next()) {
+                String row = "";
+                for (int i = 1; i < noOfColumns + 1; i++) {
+                    row += resSet.getString(i) + " ";
+                }
+                rows.add(row);
+            }
+        } catch (SQLException e) {
+            System.out.println("there was a problem connecting to the database");
+        } finally {
+            connection.close();
         }
-        connection.close();
-
+        return rows;
     }
 }

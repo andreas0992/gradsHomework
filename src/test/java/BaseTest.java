@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BaseTest {
-    static Properties prop;
+    Properties prop;
     WebDriver driver;
     PetClinicHomepage petClinicHomepage;
     HeaderPage headerPage;
@@ -24,7 +24,7 @@ public class BaseTest {
     NewOwnerPage newOwnerPage;
     OwnerGenerator generatedOwner;
     @BeforeClass
-    public static void initialSetUp(){
+    public void initialSetUp(){
         prop = new Properties();
         try {
             FileInputStream fInput = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/config/config.properties");
