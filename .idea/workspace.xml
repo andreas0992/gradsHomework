@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c41ee122-4f34-42f1-b8d8-81fd71bc2a54" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DatabaseInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DatabaseInteraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomepageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomepageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OwnersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OwnersTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/DatabaseInteraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/DatabaseInteraction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/HomepageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomepageTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/OwnersTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OwnersTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
@@ -129,9 +131,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" />
+        <item itemvalue="TestNG.OwnersTests.addOwner" />
         <item itemvalue="TestNG.OwnersTests.navigateToAddOwner" />
         <item itemvalue="TestNG.OwnersTests" />
-        <item itemvalue="TestNG.OwnersTests.addOwner" />
         <item itemvalue="TestNG.HomepageTests.homepagePresenceOfElements" />
       </list>
     </recent_temporary>

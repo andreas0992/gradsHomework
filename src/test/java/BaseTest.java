@@ -1,11 +1,10 @@
-import com.beust.jcommander.Parameter;
 import dataGeneration.OwnerGenerator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -55,11 +54,11 @@ public class BaseTest {
             driver = new FirefoxDriver();
         }
         driver.manage().window().maximize();
+        logger = LogManager.getLogger(((RemoteWebDriver)driver).getCapabilities().getBrowserName());
     }
 
     @AfterMethod
     public void tearDown() {
-        System.out.println("tear down");
         driver.quit();
     }
 }

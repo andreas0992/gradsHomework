@@ -1,7 +1,5 @@
 import dataGeneration.OwnerGenerator;
-import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -17,7 +15,6 @@ public class OwnersTests extends BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        logger = LogManager.getLogger(OwnersTests.class);
         driver.get(prop.getProperty("ownersPage"));
         ownersPage = new OwnersPage(driver);
         newOwnerPage = new NewOwnerPage(driver);
@@ -29,37 +26,48 @@ public class OwnersTests extends BaseTest {
         boolean addOwnerClickable = false;
         while (!addOwnerClickable) {
             try {
+                logger.info("clicking the Add Owner button");
                 ownersPage.clickAddOwner();
                 addOwnerClickable = true;
             } catch (Exception e) {
                 System.out.println("still not clickable");
             }
         }
+        logger.info("Verifying that I am on the New Owner page");
         Assert.assertEquals("New Owner", newOwnerPage.getNewOwnerPageTitle().getText());
-        logger.info("New Owner".equals(newOwnerPage.getNewOwnerPageTitle().getText()) ? "PASS" : "FAIL");
+        logger.info("Landed on New Owner page");
     }
 
     @Test
-    public void addOwner() throws InterruptedException, SQLException {
-        Thread.sleep(2000);
+    public void addOwner() throws SQLException {
+        logger.info("Testing that I can add an owner");
+        logger.info("Clicking on Add Owner");
         ownersPage.clickAddOwner();
+        logger.info("Generating owner data");
         generatedOwner = new OwnerGenerator();
-        System.out.println(generatedOwner.getFirstName() + " " + generatedOwner.getLastName() + " "
-                + generatedOwner.getAddress() + " " + generatedOwner.getCity() + " " + generatedOwner.getPhoneNumber());
+//        System.out.println(generatedOwner.getFirstName() + " " + generatedOwner.getLastName() + " "
+//                + generatedOwner.getAddress() + " " + generatedOwner.getCity() + " " + generatedOwner.getPhoneNumber());
+        logger.info("Inputting first name");
         newOwnerPage.inputFirstName(generatedOwner.getFirstName());
+        logger.info("Inputting last name");
         newOwnerPage.inputLastName(generatedOwner.getLastName());
+        logger.info("Inputting address");
         newOwnerPage.inputAddress(generatedOwner.getAddress());
+        logger.info("Inputting city");
         newOwnerPage.inputCity(generatedOwner.getCity());
+        logger.info("Inputting phone number");
         newOwnerPage.inputPhoneNumber(generatedOwner.getPhoneNumber().substring(0, 10));
+        logger.info("Clicking add owner");
         newOwnerPage.clickAddOwnerButton();
-        Thread.sleep(2000);
         boolean isUserPresent = false;
         List<WebElement> users = ownersPage.getUserRows();
         for (WebElement user : users) {
             if (user.getText().contains(generatedOwner.getFirstName() + " " + generatedOwner.getLastName()))
                 isUserPresent = true;
         }
+        logger.info("Verifying that the user was added to the frontend");
         Assert.assertTrue(isUserPresent);
+        logger.info("User present on frontend");
         DatabaseInteraction databaseInteraction = new DatabaseInteraction();
         ArrayList<String> rows = databaseInteraction.getQueryResults(prop.getProperty("databaseUrl"), prop.getProperty("databaseUser")
                 , prop.getProperty("databasePass"), "select * from owners where first_name=\""
@@ -71,6 +79,8 @@ public class OwnersTests extends BaseTest {
                     && row.contains(generatedOwner.getAddress()))
                 isUserInDatabase = true;
         }
+        logger.info("Verifying that the user was added to the database");
         Assert.assertTrue(isUserInDatabase);
+        logger.info("User present in database");
     }
 }

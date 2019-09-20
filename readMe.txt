@@ -1,0 +1,2 @@
+Testele sunt ar fi putut fi mai multe, dar m-am chinuit cam o zi si putin sa imi dau seama cum sa fac sa mearga rularea in paralel.(tot nu a mers)
+Mi-am dat seama prea tarziu ca nu mi-ar mai ramane timp pentru celelalte asa ca am facut doar cateva cat sa pot completa restul de puncte.

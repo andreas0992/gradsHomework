@@ -28,7 +28,7 @@ public class DatabaseInteraction {
             System.out.println("there was a problem connecting to the database");
         } finally {
             connection.close();
+            return rows;
         }
-        return rows;
     }
 }
