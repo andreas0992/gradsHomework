@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c41ee122-4f34-42f1-b8d8-81fd71bc2a54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DatabaseInteraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DatabaseInteraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OwnersTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OwnersTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/DatabaseInteraction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/DatabaseInteraction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/HomepageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/HomepageTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/OwnersTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OwnersTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +49,11 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\asirghie\IdeaProjects\gradsHomework\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\asirghie\IdeaProjects\gradsHomework\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asirghie\IdeaProjects\gradsHomework\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -68,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.HomepageTests.homepagePresenceOfElements">
+  <component name="RunManager" selected="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml">
     <configuration name="C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="gradsHomework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -91,12 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomepageTests.navigationToAllOwners" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="OwnersTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="gradsHomework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomepageTests" />
-      <option name="METHOD_NAME" value="navigationToAllOwners" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="OwnersTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -129,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomepageTests.homepagePresenceOfElements" />
         <item itemvalue="TestNG.C:/Users/asirghie/IdeaProjects/gradsHomework/testng.xml" />
-        <item itemvalue="TestNG.OwnersTests.addOwner" />
         <item itemvalue="TestNG.OwnersTests.navigateToAddOwner" />
-        <item itemvalue="TestNG.HomepageTests.navigationToAllOwners" />
+        <item itemvalue="TestNG.OwnersTests" />
+        <item itemvalue="TestNG.OwnersTests.addOwner" />
+        <item itemvalue="TestNG.HomepageTests.homepagePresenceOfElements" />
       </list>
     </recent_temporary>
   </component>
@@ -162,16 +161,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/OwnersTests.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

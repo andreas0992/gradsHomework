@@ -1,10 +1,15 @@
+import com.beust.jcommander.Parameter;
 import dataGeneration.OwnerGenerator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import pages.HeaderPage;
 import pages.NewOwnerPage;
 import pages.OwnersPage;
@@ -16,6 +21,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BaseTest {
+    Logger logger;
     Properties prop;
     WebDriver driver;
     PetClinicHomepage petClinicHomepage;
@@ -23,8 +29,9 @@ public class BaseTest {
     OwnersPage ownersPage;
     NewOwnerPage newOwnerPage;
     OwnerGenerator generatedOwner;
+
     @BeforeClass
-    public void initialSetUp(){
+    public void initialSetUp() {
         prop = new Properties();
         try {
             FileInputStream fInput = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/config/config.properties");
@@ -37,14 +44,21 @@ public class BaseTest {
     }
 
     @BeforeMethod
-    public void baseSetUp(){
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/config/chromedriver.exe");
-        driver = new ChromeDriver();
+    @Parameters("browser")
+    public void baseSetUp(String browser) {
+        if (browser.equals("chrome")) {
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + prop.getProperty("pathToChromeDriver"));
+            driver = new ChromeDriver();
+        }
+        else if(browser.equals("firefox")){
+            System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+ prop.getProperty("pathToFirefoxDriver"));
+            driver = new FirefoxDriver();
+        }
         driver.manage().window().maximize();
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         System.out.println("tear down");
         driver.quit();
     }
